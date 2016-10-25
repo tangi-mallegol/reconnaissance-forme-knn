@@ -102,8 +102,8 @@ for a1 in a:
             for d1 in d:
                 coeff = 1
                 for k in Ks:
-                    well_guess = 0
                     for coeff in coeff_distance:
+                        well_guess = 0
                         for test in base_test:
                             result = KNN_Ponderation_Distance_Params(test, k, base_apprentissage, a1, b1, c1, d1, coeff)
                             if(result == test.class_):
